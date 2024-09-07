@@ -1,0 +1,58 @@
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact__body">
+            <div class="contact__body-item">
+                <div class="contact__body-item-text">
+                    <h3 class="contact__body-item-text-title">
+                        Контакты
+                    </h3>
+                    <p>Вы можете связаться с нами любым удобным способом</p>
+                </div>
+                <div class="contact__body-item-info">
+                    <span>Санкт-Петербург</span>
+                    <a href="tel:+79997103995">+7 (999) 710-39-95</a>
+                    <a href="mailto: s-penkin90@yandex.ru"> s-penkin90@yandex.ru</a>
+                </div>
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A2debf98a3ccb02a22c5b84d6f31791f4516bfa558e3bb6e623957cb10ddf6a2b&amp;source=constructor" frameborder="0"></iframe>
+            </div>
+            <div class="line"></div>
+            <div class="contact__body-item">
+                <div class="contact__body-item-text">
+                    <h3 class="contact__body-item-text-title">
+                        Заказать звонок
+                    </h3>
+                    <p>Введите данные для заказа обратного звонка</p>
+                </div>
+                <form id="form" action="form.php" class="contact__body-item-form" method="post">
+                    <div class="contact__body-item-form-wrap">
+                        <p>*<span>Имя</span></p>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="contact__body-item-form-wrap">
+                        <p>*<span>Телефон</span></p>
+                        <input oninput="this.value=this.value.replace(/[^0-9+]/g,'');" class="input" type="tel">
+                    </div>
+                    <div class="contact__body-item-form-wrap">
+                        <p>*<span>E-mail</span></p>
+                        <input oninput="this.value=this.value.replace(/[^a-zA-Z0-9@.]/g,'');" class="input" type="email">
+                    </div>
+                    <label for="checkbox" class="checkbox-label">
+                        <input type="checkbox" id="checkbox" class="checkbox">
+                        <span class="checkbox-view">
+                            <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18"
+                                viewBox="0 0 511.985 511.985">
+                                <path fill="#fff"
+                                    d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z" />
+                            </svg>
+                        </span>
+                        <p>*Я согласен на обработку моих персональных данных</p>
+                    </label>
+                    <button type="button" class="contact__body-item-form-btn">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
